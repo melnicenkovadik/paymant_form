@@ -1,0 +1,12 @@
+{
+  "title": "English working",
+  "amount": "Amount",
+  "payeeAccount": "Payee Account",
+  "purpose": "Purpose",
+  "payerAccount": "Payer Account",
+  "payee": "Payee",
+  "symbol": "€",
+  "submit": "submit",
+  "balance": "Balance",
+  "rest": "Residue"
+}
