@@ -1,5 +1,5 @@
-import { Container, Grid } from '@mui/material'
 import { ReactNode } from 'react'
+import { Container, Grid } from '@mui/material'
 
 export function Index({ actions, mainPageInfo }: { actions: ReactNode; mainPageInfo: ReactNode }) {
   return (

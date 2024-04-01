@@ -19,7 +19,6 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json',
   },
   plugins: ['react', 'react-hooks', 'unused-imports', '@typescript-eslint', 'simple-import-sort'],
 

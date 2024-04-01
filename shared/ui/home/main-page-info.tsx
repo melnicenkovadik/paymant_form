@@ -1,6 +1,6 @@
-import PaymentForm from 'features/payment-form/payment-form'
-import FormWrapper from 'features/payment-form/form-wrapper'
 import { Box } from '@mui/material'
+import FormWrapper from 'features/payment-form/form-wrapper'
+import PaymentForm from 'features/payment-form/payment-form'
 
 export const MainPageInfo = () => {
   return (
