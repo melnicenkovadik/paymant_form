@@ -13,6 +13,7 @@ const AccountBalance = () => {
   React.useEffect(() => {
     setLoading(false)
   }, [selectedPayerAccount])
+
   return (
     <Grid container>
       <Grid item xs={6}>

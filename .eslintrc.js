@@ -52,17 +52,11 @@ module.exports = {
           'error',
           {
             groups: [
-              // Packages `react` related packages come first.
               ['^react', '^@?\\w'],
-              // Internal packages.
               ['^(@|components)(/.*|$)'],
-              // Side effect imports.
               ['^\\u0000'],
-              // Parent imports. Put `..` last.
               ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
-              // Other relative imports. Put same-folder imports and `.` last.
               ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
-              // Style imports.
               ['^.+\\.?(scss)$'],
             ],
           },
@@ -76,7 +70,7 @@ module.exports = {
         '@typescript-eslint/semi': ['off'],
         '@typescript-eslint/consistent-type-imports': 'off',
         'multiline-ternary': ['off'],
-        '@typescript-eslint/no-explicit-any': 'off', // todo remove
+        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/no-empty-interface': 'off',
         '@typescript-eslint/no-empty-function': 'off',
@@ -84,19 +78,11 @@ module.exports = {
         'react/no-unescaped-entities': 'off',
         '@next/next/no-img-element': 'off',
         'react-hooks/exhaustive-deps': 'off',
-        // allow promise-function-async
         'no-async-promise-executor': 'off',
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/promise-function-async': 'off',
-        // 'react/jsx-props-no-spreading': 'off',
-
         curly: ['error', 'multi-line'],
-        // "vue/max-attributes-per-line": ["error", {
-        //   "singleline": 1,
-        //   "multiline": 1,
-        // }],
-        // "space-before-function-paren": ["error", "never"],
         'comma-dangle': ['off'],
         'no-console': 'off',
         'no-undef': 'off',
@@ -106,7 +92,7 @@ module.exports = {
         camelcase: ['off'],
         'array-callback-return': 'off',
         'no-return-assign': 'off',
-        'import/named': 'off', // because of import { BigNumberish, BytesLike } from "ethers"
+        'import/named': 'off',
       },
     },
   ],
